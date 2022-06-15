@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.containerGeral {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.celulares {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;    
+}
+
+.celulares img {
+    height: 40rem;
+}
+
+.continuar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 45%;
+    min-height: 34rem;
+    margin-left: 1.5rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    margin-top: 3rem;
+    padding: 3rem 0;
+    min-width: 19rem;
+}
+
+.group:nth-child(2) {
+    padding: 2rem 0;
+    margin-top: 0.5rem;
+}
+
+.logoInstagram {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fotoPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.fotoPerfil img {
+    height: 6rem;
+    
+}
+
+.loginInstagram {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.logoutInstagram {
+    color: #0095f6;
+    margin-top: 2rem;
+}
+
+.semconta {
+    padding-top: 0.5rem;
+    color: rgb(160, 160, 160);
+}
+
+.linkAzul {
+    color: #0095f6;
+}
+
+.getTheApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.downloads {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+.appDownload {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.appDownload:nth-child(1) {
+    background-image: url(assets/imgs/btnAppStore.png);
+}
+
+.appDownload:nth-child(2) {
+    background-image: url(assets/imgs/btnGooglePlay.png);
+}
+
+@media (max-width: 1024px) {
+    .containerGeral {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+  
+    .containerGeral {
+        width: 90%;
+    }
+
+    .celulares {
+        display: none;
+    }
+
+    .continuar {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
